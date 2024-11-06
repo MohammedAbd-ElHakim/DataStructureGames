@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DataStructure Games</title>
+</head>
+
+<body>
+    <div class="init">
+        <div class="center1">
+            <h1>WE NEED YOU!</h1>
+            <p>DataStructure Games!</p>
+            <p class="floating bold" id="startGame">START GAME</p>
+        </div>
+    </div>
+
+    <!-- linked list -->
+    <div class="parent_countainer">
+        <div class="big_countainerL">
+            <h2 class="counter">LinkedList Training : </h2>
+            <div class="container">
+                <div class="game"></div>
+                <img src="./devil_1923033.png" id="character" class="character" />
+            </div>
+
+            <div class="operations">
+                <div class="search">
+                    <input type="text" id="searchInput" placeholder="Enter node value" />
+                    <button id="searchButton">Search</button>
+                </div>
+                <button id="insertAtFront">Insert at Front</button>
+                <button id="delete">Delete from Front</button>
+                <button id="insertAtLast">Insert at Last</button>
+                <button id="deleteFromLast">Delete from Last</button> <!-- زر الحذف من النهاية -->
+            </div>
+        </div>
+
+        <!-- Stack -->
+        <div class="big_countainer">
+            <h2 class="counter">Stack Training : </h2>
+            <div class="container_stack">
+                <div class="game_stack">
+                </div>
+                <!-- operation -->
+                <div class="operations_of_stack">
+                    <input type="text" id="value" placeholder="Enter value" />
+                    <button id="push">push()</button>
+                    <button id="pop">pop()</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- queue -->
+        <div class="big_countainer3">
+            <h2 class="counter">queue Training : </h2>
+            <div class="container_queue">
+                <div class="game_queue">
+                </div>
+            </div>
+            <!-- operation -->
+            <div class="operations_of_queue">
+                <input type="text" id="value_of_queue" placeholder="Enter value" />
+                <!-- insert at last -->
+                <button id="enqueue">enqueue()</button>
+                <!-- remove front -->
+                <button id="dequeue">dequeue()</button>
+            </div>
+        </div>
+    </div>
+    <div class="message" id="message"></div>
+
+    <script src="./main.js"></script>
+    <script src="./stack.js"></script>
+    <script src="./queue.js"></script>
+</body>
+
+</html>
